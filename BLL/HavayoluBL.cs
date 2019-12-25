@@ -25,19 +25,18 @@ namespace BLL
         {
             ctx.Havayollari.Add(h);
             return ctx.SaveChanges() > 0;
-           
+
         }
         public bool Sil(Havayolu h)
         {
-            ctx.ChangeTracker.DetectChanges();
-            ctx.Havayollari.Remove(h);
+            Havayolu hh = ctx.Havayollari.Find(h.Id_Havayolu);
+            ctx.Havayollari.Remove(hh);
             return ctx.SaveChanges() > 0;
-            //System.InvalidOperationException: 'The object cannot be deleted because it was not found in the ObjectStateManager.'
 
         }
         public bool Guncelle(Havayolu h)
         {
-           Havayolu hh = ctx.Havayollari.Find(h.Id_Havayolu);
+            Havayolu hh = ctx.Havayollari.Find(h.Id_Havayolu);
             ctx.Havayollari.Remove(hh);
             ctx.Havayollari.Add(h);
             return ctx.SaveChanges() > 0;
