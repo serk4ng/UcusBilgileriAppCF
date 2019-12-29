@@ -1,1 +1,1 @@
-# UcusBilgileriAppCF
+#Delete now works
