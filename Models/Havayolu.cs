@@ -13,7 +13,6 @@ namespace Models
         public string Id_Havayolu { get; set; }
         public string Havayolu_Adi { get; set; }      
         public string Id_Ucak { get; set; }
-
         public ICollection<Ucak> UcagaAitHavayolu { get; set; }
         //public Ucak Ucagi { get; set; }
 

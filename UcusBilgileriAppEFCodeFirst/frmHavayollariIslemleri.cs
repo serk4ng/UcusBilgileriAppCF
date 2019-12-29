@@ -35,6 +35,7 @@ namespace UcusBilgileriAppEFCodeFirst
 
                 ha.Id_Havayolu = txtHavayoluID.Text.Trim();
                 ha.Havayolu_Adi = txtHavayoluAdi.Text.Trim();
+                ha.Id_Ucak = null;
                 //ha.Id_Ucak = txtIdUcak.Text.Trim();
 
                 if (id_havayolu == null)

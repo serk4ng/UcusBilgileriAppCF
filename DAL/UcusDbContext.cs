@@ -30,6 +30,16 @@ namespace DAL
             modelBuilder.Entity<Ucak>().Property(u => u.Id_Ucak).HasMaxLength(10).IsRequired().HasColumnType("nvarchar");
             modelBuilder.Entity<Ucak>().Property(u => u.Adet).IsRequired().HasColumnType("int");
 
+            //modelBuilder.Entity<Havayolu>()
+            //    .HasMany<Ucak>(s => s.Ucak)
+            //    .WithMany(c => c.Havayolu)
+            //    .Map(cs =>
+            //    {
+            //        cs.MapLeftKey("Id_Havayolu");
+            //        cs.MapRightKey("Id_Ucak");
+            //        cs.ToTable("tblHavayollari");
+            //    });
+
         }
     }
 }
